@@ -272,3 +272,87 @@ body.dark-mode .container-extensions p {
     font-weight: 700;
     font-style: normal;
 }
+
+
+/* tablet */
+
+@media (max-width: 1200px) {
+    .grid-extensions{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'devlens stylespy'
+                             'speedboost json'
+                             'tabmaster viewport'
+                             'markup gridguides'
+                             'palette link'
+                             'dom console';
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 830px) {
+    .grid-extensions {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+                            'devlens'
+                            'stylespy'
+                            'speedboost'
+                            'json'
+                            'tabmaster'
+                            'viewport'
+                            'markup'
+                            'gridguides'
+                            'palette'
+                            'link'
+                            'dom'
+                            'console';
+    }
+}
+
+/* handphone */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding-inline: 20px;
+    }
+
+    .grid-extensions {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+                            'devlens'
+                            'stylespy'
+                            'speedboost'
+                            'json'
+                            'tabmaster'
+                            'viewport'
+                            'markup'
+                            'gridguides'
+                            'palette'
+                            'link'
+                            'dom'
+                            'console';
+     }
+}
+
+/* small handphone */
+
+@media (max-width: 375px) {
+    .container {
+        padding-inline: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-btn {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+
+}
